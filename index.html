@@ -23,6 +23,8 @@
     --school-tint:#FDECE9;
     --mute:#9AA4AF;      /* 대안 주차장 */
     --cafe:#B0742B;      /* 카페 (노트북) */
+    --food:#C2255C;      /* 맛집 */
+    --spot:#7048E8;      /* 가볼 곳 (데이트) */
     --shadow:0 6px 22px rgba(20,30,25,.08);
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
@@ -85,6 +87,8 @@
   .dot.g{background:var(--go);}
   .dot.m{background:var(--mute);}
   .dot.c{background:var(--cafe);}
+  .dot.f{background:var(--food);}
+  .dot.p{background:var(--spot);}
 
   /* ===== Section ===== */
   .section-title{
@@ -169,6 +173,10 @@
   .mk.mute .pin{width:13px;height:13px;background:var(--mute);}
   .mk.cafe .bubble{background:var(--cafe);}
   .mk.cafe .pin{width:14px;height:14px;background:var(--cafe);}
+  .mk.food .bubble{background:var(--food);}
+  .mk.food .pin{width:14px;height:14px;background:var(--food);}
+  .mk.spot .bubble{background:var(--spot);}
+  .mk.spot .pin{width:15px;height:15px;background:var(--spot);}
   @keyframes pulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(3);opacity:0;}}
 
   .walker{border-radius:50%;background:#fff;}
@@ -200,6 +208,7 @@
       <button id="btnSongpa">송파동</button>
       <button id="btnOlympic">올림픽</button>
       <button id="btnCafe">카페</button>
+      <button id="btnDate">데이트</button>
       <button id="btnAll">전체</button>
     </div>
     <div id="map"></div>
@@ -210,6 +219,8 @@
     <span><i class="dot g"></i>추천 주차장</span>
     <span><i class="dot m"></i>대안 주차장</span>
     <span><i class="dot c"></i>카페(노트북)</span>
+    <span><i class="dot f"></i>맛집</span>
+    <span><i class="dot p"></i>가볼 곳</span>
   </div>
 
   <h2 class="section-title">가장 가까운 주차장 (강력 추천)</h2>
@@ -332,6 +343,112 @@
     <b>5시간 팁 ·</b> 한 카페에서 너무 오래 있기 부담되면, <b>Gi Two(주차장 근처)에서 시작 → 점심 먹고 → 커피빈에서 마무리</b> 식으로 나눠 머무는 것도 좋아요. 콘센트 자리는 보통 벽쪽·기둥쪽에 많으니 도착하면 먼저 확인하세요.
   </div>
 
+  <h2 class="section-title" style="margin-top:34px;">데이트 코스 · 점심</h2>
+
+  <div class="card" style="border-left:5px solid var(--food);">
+    <span class="pill" style="background:var(--food);color:#fff;">특별한 점심</span>
+    <h3>몽중헌 (롯데캐슬 20층)</h3>
+    <p class="addr">송파구 위례성대로 10 · 차로 약 5분, 주차 가능</p>
+    <ul class="notes">
+      <li>20층에서 <b>올림픽공원이 내려다보이는 뷰 좋은 중식당</b>이에요. 딤섬이 유명하고 분위기가 좋아 기념일 점심으로 인기.</li>
+      <li>점심 11:30~15:00 · 평점 4.2(리뷰 1,000+) · 가격대는 조금 있는 편.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/몽중헌,37.5166729,127.1134817">카카오맵</a>
+      <a class="btn-naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/몽중헌 송파">네이버맵</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:5px solid var(--food);">
+    <span class="pill" style="background:#EEDCE4;color:#9B2D55;">가성비 점심</span>
+    <h3>청년감자탕</h3>
+    <p class="addr">송파구 오금로19길 5 · 차로 약 5분</p>
+    <ul class="notes">
+      <li>푸짐하고 든든한 <b>감자탕 맛집</b>(평점 4.1·리뷰 680+). 가볍게 배부르게 먹기 좋아요.</li>
+      <li class="warn">전용 주차가 넉넉하지 않아, 가까운 공영주차장을 이용하는 게 편해요.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/청년감자탕,37.5102894,127.1133031">카카오맵</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">데이트 코스 · 저녁 (방이동 먹자골목)</h2>
+
+  <div class="card" style="border-left:5px solid var(--food);">
+    <span class="pill" style="background:var(--food);color:#fff;">저녁 1순위</span>
+    <h3>송돗 (Songdot)</h3>
+    <p class="addr">송파구 오금로13길 7 · 방이동 먹자골목</p>
+    <ul class="notes">
+      <li>직원이 고기를 직접 구워줘서 <b>대화에 집중하기 좋은 돼지고기 전문점</b>이에요. 외국 관광객 후기도 많은 검증된 집(평점 4.4).</li>
+      <li>11:00~23:30 · 마무리 수제비도 인기.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/송돗,37.513328,127.108392">카카오맵</a>
+      <a class="btn-naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/송돗 방이동">네이버맵</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:5px solid var(--food);">
+    <span class="pill" style="background:#EEDCE4;color:#9B2D55;">분위기 저녁</span>
+    <h3>육화식당</h3>
+    <p class="addr">송파구 올림픽로32길 29 · 방이동 먹자골목</p>
+    <ul class="notes">
+      <li><b>조개구이와 삼겹살</b>을 함께 즐기는 집(평점 4.4·리뷰 500). 늦게까지 운영해 저녁 데이트로 좋아요.</li>
+      <li>토·일 12:00~22:30 · 직원이 구워줍니다.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/육화식당,37.5135939,127.1098015">카카오맵</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">데이트 코스 · 가볼 곳 (차로 이동 · 주차 OK)</h2>
+
+  <div class="card" style="border-left:5px solid var(--spot);">
+    <span class="pill" style="background:var(--spot);color:#fff;">저녁 산책</span>
+    <h3>올림픽공원</h3>
+    <p class="addr">송파구 올림픽로 424 · 대형 주차장(유료) · 차로 약 5분</p>
+    <ul class="notes">
+      <li>넓은 공원에서 <b>산책·자전거</b>가 좋아요. ‘나홀로나무’, 들꽃마루 같은 포토존이 유명(평점 4.6·리뷰 3,000+).</li>
+      <li>매일 05:00~24:00 · 입장 무료. 저녁 노을·야경 산책 코스로 추천.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/올림픽공원,37.5206868,127.1214941">카카오맵</a>
+      <a class="btn-naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/올림픽공원">네이버맵</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:5px solid var(--spot);">
+    <span class="pill" style="background:var(--spot);color:#fff;">야경 명소</span>
+    <h3>롯데월드몰 · 서울스카이</h3>
+    <p class="addr">송파구 올림픽로 300 · 대형 주차장 · 차로 약 7분</p>
+    <ul class="notes">
+      <li><b>서울스카이 전망대</b>(117~123층)는 노을·야경이 환상적이에요(평점 4.6). 날씨 좋은 날 강력 추천.</li>
+      <li>비 오거나 추우면 <b>롯데월드몰</b>에서 쇼핑·아쿠아리움·식사까지 실내 데이트로 해결.</li>
+      <li>10:30~22:00 · 옆 <b>석촌호수</b> 산책 코스도 함께 묶기 좋아요.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/롯데월드타워,37.5124641,127.102543">카카오맵</a>
+      <a class="btn-naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/서울스카이">네이버맵</a>
+    </div>
+  </div>
+
+  <div class="card" style="border-left:5px solid var(--spot);">
+    <span class="pill" style="background:#E7E0FA;color:#5435B8;">낮에 잠깐</span>
+    <h3>한성백제박물관</h3>
+    <p class="addr">송파구 위례성대로 71 · 주차 2시간 약 4,000원</p>
+    <ul class="notes">
+      <li><b>입장 무료</b>에 몽촌토성과 이어져 가볍게 둘러보기 좋아요(평점 4.4).</li>
+      <li class="warn">화~일 09:00~18:00(월 휴관) · <b>저녁엔 닫으니 낮 시간대</b>에만 가능해요.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn-ghost" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/한성백제박물관,37.5153979,127.1208596">카카오맵</a>
+    </div>
+  </div>
+
+  <div class="tip" style="background:#F3EFFb;border-color:#DDD2F7;color:#5435B8;">
+    <b>추천 데이트 동선 ·</b> 수업 끝나면 <b>방이동 먹자골목(송돗)에서 저녁 → 차로 5분 올림픽공원 노을 산책 → 서울스카이 야경</b> 코스가 가장 무난해요. 낮에 시간이 비면 한성백제박물관을 먼저 들러도 좋아요.
+  </div>
+
   <footer>
     실시간 주차 가능 면수는 서울시 주차정보안내시스템(parking.seoul.go.kr)에서 확인할 수 있어요.<br>
     도보 경로는 안내용 근사 경로예요. 실제 길찾기는 위 버튼을 눌러주세요.
@@ -352,6 +469,21 @@
     { ll:[37.5159807, 127.1145899], name:'Bossa Nova' },
     { ll:[37.5148586, 127.110954],  name:'Fomore' },
     { ll:[37.5145097, 127.1078186], name:'커피빈' }
+  ];
+
+  // 맛집 (점심 · 저녁)
+  var FOODS = [
+    { ll:[37.5166729, 127.1134817], name:'몽중헌(점심·딤섬)' },
+    { ll:[37.5102894, 127.1133031], name:'청년감자탕(점심)' },
+    { ll:[37.513328,  127.108392],  name:'송돗(저녁·고기)' },
+    { ll:[37.5135939, 127.1098015], name:'육화식당(저녁)' }
+  ];
+
+  // 가볼 곳 (데이트)
+  var SPOTS = [
+    { ll:[37.5206868, 127.1214941], name:'올림픽공원' },
+    { ll:[37.5124641, 127.102543],  name:'롯데월드·서울스카이' },
+    { ll:[37.5153979, 127.1208596], name:'한성백제박물관' }
   ];
 
   // 각 주차장 -> 방이중학교 도보 근사 경로 (도로 따라 부드럽게)
@@ -407,6 +539,8 @@
   marker(SONGPA, 'mute', '송파동공영', false);
   marker(OLYMPIC,'mute', '올림픽공원', false);
   CAFES.forEach(function(c){ marker(c.ll, 'cafe', c.name, false); });
+  FOODS.forEach(function(c){ marker(c.ll, 'food', c.name, false); });
+  SPOTS.forEach(function(c){ marker(c.ll, 'spot', c.name, false); });
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -455,18 +589,21 @@
   if(!reduceMotion) requestAnimationFrame(frame);
 
   // 뷰 토글
+  var llOf = function(arr){ return arr.map(function(x){return x.ll;}); };
   var views = {
     bangi:   L.latLngBounds([SCHOOL, BANGI]).pad(0.55),
     songpa:  L.latLngBounds([SCHOOL, SONGPA]).pad(0.28),
     olympic: L.latLngBounds([SCHOOL, OLYMPIC]).pad(0.28),
-    cafe:    L.latLngBounds([SCHOOL, BANGI].concat(CAFES.map(function(c){return c.ll;}))).pad(0.22),
-    all:     L.latLngBounds([SCHOOL, BANGI, SONGPA, OLYMPIC].concat(CAFES.map(function(c){return c.ll;}))).pad(0.12)
+    cafe:    L.latLngBounds([SCHOOL, BANGI].concat(llOf(CAFES))).pad(0.22),
+    date:    L.latLngBounds([SCHOOL].concat(llOf(FOODS)).concat(llOf(SPOTS))).pad(0.12),
+    all:     L.latLngBounds([SCHOOL, BANGI, SONGPA, OLYMPIC].concat(llOf(CAFES)).concat(llOf(FOODS)).concat(llOf(SPOTS))).pad(0.10)
   };
   var btns = {
     bangi:   document.getElementById('btnBangi'),
     songpa:  document.getElementById('btnSongpa'),
     olympic: document.getElementById('btnOlympic'),
     cafe:    document.getElementById('btnCafe'),
+    date:    document.getElementById('btnDate'),
     all:     document.getElementById('btnAll')
   };
   function show(key){
